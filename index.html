@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preparing Your Download</title>
+  <meta name="description" content="Preparing a verified GitHub release download." />
+  <meta name="theme-color" content="#070b12" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <main class="stage" id="card">
+    <a class="logo" id="repoLink" href="https://github.com" rel="noopener" aria-label="View on GitHub">
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+      </svg>
+    </a>
+
+    <h1 id="title">Preparing Your Download</h1>
+    <p class="lede" id="subtitle">We’re getting everything ready for you.<br>Your download will start automatically in a moment.</p>
+
+    <section class="panel" aria-live="polite">
+      <div class="panel-row">
+        <span class="live">
+          <span class="pulse" aria-hidden="true"></span>
+          <span id="status">Connecting to GitHub…</span>
+        </span>
+        <span class="timer" id="timer">4s</span>
+      </div>
+
+      <div class="bar" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="fill" id="fill"></div>
+      </div>
+
+      <div class="panel-meta">
+        <span id="fileName">Release.zip</span>
+        <span id="scanLabel">Virus scan: clean</span>
+      </div>
+    </section>
+
+    <button class="cta" id="primary" type="button">
+      Direct download
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"/>
+      </svg>
+    </button>
+
+    <ul class="pills">
+      <li>
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm-.75 4.75v3.69L5.22 6.22a.75.75 0 1 0-1.06 1.06l3.25 3.25c.3.3.77.3 1.06 0l3.25-3.25a.75.75 0 0 0-1.06-1.06L8.75 8.44V4.75a.75.75 0 0 0-1.5 0Z"/></svg>
+        Open Source
+      </li>
+      <li>
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm3.78-9.72a.75.75 0 0 0-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l4.5-4.5Z"/></svg>
+        Verified
+      </li>
+      <li>
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Zm5.5-3.56V2.5a.75.75 0 0 1 1.5 0v7.94l1.97-1.97a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L5.22 9.53a.75.75 0 0 1 1.06-1.06l1.97 1.97Z"/></svg>
+        <span id="downloadsLabel">14,000+ downloads</span>
+      </li>
+    </ul>
+  </main>
+
+  <footer>Hosted on GitHub</footer>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
